@@ -41,6 +41,7 @@
 .normalText {
   font-family: Georgia, serif;
   font-size: .75em;
+  color: white;
 }
 
 .hoggyText {
@@ -72,15 +73,41 @@ ul {
   margin: auto;
 }
 
+.pigContainer {
+  display:grid;
+  grid-template-columns: auto auto auto auto
+}
 
-.pigTile {
+#displayWeight {
+  color: red;
+}
+
+.pigTileRed {
   display: inline;
   background-repeat: no-repeat;
   background-position: center 90%;
-  float: left;
   margin: 2%;
   padding: 1%;
-  outline: #3B0B0B dotted thick;
+  border: outset;
+  background: #E8E8E8;
+  background: -moz-radial-gradient(center, #E8E8E8 0%, #F5F5F5 50%, #FFFFFF 100%);
+  background: -webkit-radial-gradient(center, #E8E8E8 0%, #F5F5F5 50%, #FFFFFF 100%);
+  background: radial-gradient(ellipse at center, #E8E8E8 0%, #F5F5F5 50%, #FFFFFF 100%);
+  transition: 0.75s;
+  opacity: 1;
+}
+
+.pigTileBlue {
+  display: inline;
+  background-repeat: no-repeat;
+  background-position: center 90%;
+  margin: 2%;
+  padding: 1%;
+  border: inset;
+  background: #FFFFFF;
+  background: -moz-radial-gradient(center, #FFFFFF 0%, #EDEDED 82%, #DEDEDE 100%);
+  background: -webkit-radial-gradient(center, #FFFFFF 0%, #EDEDED 82%, #DEDEDE 100%);
+  background: radial-gradient(ellipse at center, #FFFFFF 0%, #EDEDED 82%, #DEDEDE 100%);
   transition: 0.75s;
   opacity: 1;
 }
